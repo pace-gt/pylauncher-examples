@@ -1,0 +1,7 @@
+echo "Hello from command 0"; sleep 21
+echo "Hello from command 1"; sleep 30
+echo "Hello from command 2"; sleep 8
+echo "Hello from command 3"; sleep 34
+echo "Hello from command 4"; sleep 39
+echo "Hello from command 5"; sleep 9
+

@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=6
 #SBATCH --time=00:05:00
-#SBATCH --output=%x-%j.out
+#SBATCH --output=%x_%j.out
 
 module load pylauncher
 python3 test_serial.py
