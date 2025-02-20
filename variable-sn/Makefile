@@ -1,1 +1,0 @@
-../constant-sn/Makefile
