@@ -4,29 +4,23 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-  int job_id, sleep_sec, my_rank, n_ranks;
+  int my_rank, n_ranks;
 
   MPI_Init(&argc, &argv);
   MPI_Comm_size(MPI_COMM_WORLD, &n_ranks);
   MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
-  if (my_rank == 0 && argc < 2) {
-    printf("Usage: mpi_hello job_id sleep_seconds\n");
-    MPI_Abort(MPI_COMM_WORLD, 1);
+
+  long sum;
+  for (sum = 0; sum < 1000000000; ++sum) {
+    continue;
   }
 
-  job_id = atoi(argv[1]);
-  sleep_sec = atoi(argv[2]);
-
-  char outfile[16];
-  sprintf(outfile, "pytmp-%04d-%04d", job_id, my_rank);
-
-  FILE *f = fopen(outfile, "w");
-  fprintf(f, "%d/%d working\n", my_rank, n_ranks);
-  fclose(f);
-
-  if (my_rank == 0) {
-    printf("Job %d on %d processors\n", job_id, n_ranks);
+  for (int i = 0; i < n_ranks; ++i) {
+    if (my_rank == i) {
+      printf("Rank %d out of %d computed %ld\n", my_rank, n_ranks, sum);
+    }
+    MPI_Barrier(MPI_COMM_WORLD);
   }
-  sleep(sleep_sec);
+
   MPI_Finalize();
 }

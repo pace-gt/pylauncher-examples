@@ -1,7 +1,13 @@
-4,./mpi_hello 0 10 
-4,./mpi_hello 1 10 
-8,./mpi_hello 2 10 
-4,./mpi_hello 3 10 
-4,./mpi_hello 4 10 
-8,./mpi_hello 5 10 
+2,./mpi_hello
+1,./mpi_hello
+6,./mpi_hello
+3,./mpi_hello
+4,./mpi_hello
+2,./mpi_hello
+3,./mpi_hello
+1,./mpi_hello
+6,./mpi_hello
+2,./mpi_hello
+2,./mpi_hello
+3,./mpi_hello
 

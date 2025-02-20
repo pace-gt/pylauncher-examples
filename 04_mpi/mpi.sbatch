@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=mpi
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-node=12
 #SBATCH --time=00:10:00
 #SBATCH --output=%x_%j.out
 #SBATCH --mem-per-cpu=200M
