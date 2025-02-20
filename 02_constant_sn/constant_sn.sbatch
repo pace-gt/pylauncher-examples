@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=constant_sn
-#SBATCH --account=YOUR_ACCOUNT
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=24
 #SBATCH --time=00:10:00
