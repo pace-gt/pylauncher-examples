@@ -1,12 +1,12 @@
 CC = mpicc
 CFLAGS = -g -Wall
 
-all: mpi_hello
+all: multi_process
 
-mpi_hello: mpi_hello.c
+multi_process: multi_process.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	rm -f mpi_hello
+	rm -f multi_process
 
 .PHONY: clean

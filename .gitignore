@@ -1,6 +1,6 @@
 *out
 pylauncher_tmp*/
 queuestate
-pth_hello
-mpi_hello
+multi_thread
+multi_process
 pytmp*

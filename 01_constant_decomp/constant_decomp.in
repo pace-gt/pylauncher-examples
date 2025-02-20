@@ -1,0 +1,12 @@
+./multi_thread 2
+./multi_thread 1
+./multi_thread 6
+./multi_thread 3
+./multi_thread 4
+./multi_thread 2
+./multi_thread 3
+./multi_thread 1
+./multi_thread 6
+./multi_thread 2
+./multi_thread 2
+./multi_thread 5
