@@ -1,6 +1,6 @@
-CC=gcc
-DEBUG= -g -Wall
-PTHREADSLIB= -lpthread
+CC = gcc
+DEBUG = -g -Wall
+PTHREADSLIB = -lpthread
 
 pth_hello : pth_hello.c
 	$(CC) $(DEBUG) -o pth_hello pth_hello.c $(PTHREADSLIB)
